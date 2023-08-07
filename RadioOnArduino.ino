@@ -24,11 +24,6 @@ void setup() {
   tft.init(240, 240, SPI_MODE2);                //  ST7789 дисплей 240x240 px  
   tft.setRotation(2);                           // Поворот экрана  
   tft.fillScreen(ST77XX_BLACK);                 // Цвет заливки
-  tft.fillRect(0, 37, tft.width(), -37, ST77XX_BLACK); // Первая строчка на Синим фоне
-  tft.fillRect(0, 42, tft.width(), 50, ST77XX_BLACK);   // Вторая строчка на Красном фоне
-  tft.fillRect(0, 95, tft.width(), 50, ST77XX_BLACK); // Третья строчка на Зелёном фоне
-  tft.fillRect(0, 147, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Белом фоне
-  tft.fillRect(0, 199, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Жёлтом фоне
   
 }
 void loop() {
@@ -40,11 +35,6 @@ void loop() {
     tft.init(240, 240, SPI_MODE2);                //  ST7789 дисплей 240x240 px  
     tft.setRotation(2);                           // Поворот экрана  
     tft.fillScreen(ST77XX_BLACK);                 // Цвет заливки
-    tft.fillRect(0, 37, tft.width(), -37, ST77XX_BLACK); // Первая строчка на Синим фоне
-    tft.fillRect(0, 42, tft.width(), 50, ST77XX_BLACK);   // Вторая строчка на Красном фоне
-    tft.fillRect(0, 95, tft.width(), 50, ST77XX_BLACK); // Третья строчка на Зелёном фоне
-    tft.fillRect(0, 147, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Белом фоне
-    tft.fillRect(0, 199, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Жёлтом фоне
     delay(1000);
   }
   if (button2 == 1) {
@@ -53,11 +43,6 @@ void loop() {
     tft.init(240, 240, SPI_MODE2);                //  ST7789 дисплей 240x240 px  
     tft.setRotation(2);                           // Поворот экрана  
     tft.fillScreen(ST77XX_BLACK);                 // Цвет заливки
-    tft.fillRect(0, 37, tft.width(), -37, ST77XX_BLACK); // Первая строчка на Синим фоне
-    tft.fillRect(0, 42, tft.width(), 50, ST77XX_BLACK);   // Вторая строчка на Красном фоне
-    tft.fillRect(0, 95, tft.width(), 50, ST77XX_BLACK); // Третья строчка на Зелёном фоне
-    tft.fillRect(0, 147, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Белом фоне
-    tft.fillRect(0, 199, tft.width(), 50, ST77XX_BLACK);  // Третья строчка на Жёлтом фоне
     delay(1000);
   }
   if (sum > 6) {
